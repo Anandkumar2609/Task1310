@@ -82,6 +82,7 @@ public class Pages {
 	
 	@FindBy(xpath = "//a[text()='Log in']")
 
+<<<<<<< HEAD
 	private WebElement Login;
 
 	@FindBy(xpath = "//input[@value='Log in']")
@@ -90,9 +91,58 @@ public class Pages {
 
 	public WebElement getLoginMail() {
 		return LoginMail;
+=======
+	@FindBy(xpath="//a[text()='Log in']")
+	
+	private WebElement Login;
+	
+	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
+	
+	private WebElement ElecButton;
+	
+	@FindBy(xpath="(//input[@type='button'])[3]")
+	
+	private WebElement AddToCart;
+	
+	@FindBy(xpath="(//a[contains(text(),'Cell phones')])[3]")
+			
+	private WebElement CellLink;
+
+	@FindBy(xpath="//input[@value='Log in']")
+	
+	private WebElement LoginMail;
+	
+	@FindBy(xpath="//img[@title='Show products in category Cell phones']")
+	private WebElement  phoneLink;
+	
+	
+	
+	public WebElement getPhoneLink() {
+		return phoneLink;
+>>>>>>> dev2
 	}
 
 	public WebElement getLogin() {
 		return Login;
 	}
+<<<<<<< HEAD
+=======
+
+	public WebElement getElecButton() {
+		return ElecButton;
+	}
+
+	public WebElement getAddToCart() {
+		return AddToCart;
+	}
+
+	public WebElement getCellLink() {
+		return CellLink;
+	}
+
+	public WebElement getLoginMail() {
+		return LoginMail;
+	}
+			
+>>>>>>> dev2
 }
