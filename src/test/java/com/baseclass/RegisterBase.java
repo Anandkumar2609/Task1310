@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -46,5 +47,10 @@ public class RegisterBase {
 			e.printStackTrace();
 		}
 
+	}
+	public static void mousuHoverAcc(WebElement element)
+	{
+		Actions acc=new Actions(driver);
+		acc.moveToElement(element);		
 	}
 }
